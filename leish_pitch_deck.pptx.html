@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LEISH Pitch Deck</title>
+<script src="https://statics.moonshot.cn/kimi-ppt/html-gen/static/tailwindcss@4_0805.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" rel="stylesheet"/>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.4.0/dist/echarts.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .ppt-slide {
+                @apply relative w-[1280px] h-[720px] mx-auto p-[40px] box-border overflow-hidden mb-[40px];
+            }
+        }
+    </style>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1E293B;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 py-8">
+<!-- Slide 1: Title Slide -->
+<div class="ppt-slide !bg-gradient-to-br !from-indigo-600 !to-violet-700" type="cover">
+<div class="flex flex-col items-center justify-center h-full text-white">
+<div class="mb-8">
+<div class="w-24 h-24 bg-white rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-2xl">
+<span class="text-5xl font-black text-indigo-600">L</span>
+</div>
+<h1 class="text-7xl font-black mb-4 tracking-tight">LEISH</h1>
+<p class="text-2xl font-light opacity-90">The Creator Economy Infrastructure</p>
+</div>
+<div class="bg-white/10 backdrop-blur-sm rounded-2xl px-12 py-6 mb-8">
+<p class="text-xl font-medium mb-2">Southeast Asia's First Integrated Creator Ecosystem</p>
+<p class="text-lg opacity-80 italic">"From First Video to Full Production"</p>
+</div>
+<div class="flex items-center gap-8 text-lg">
+<div class="flex items-center gap-3">
+<i class="fas fa-money-bill-wave text-amber-300"></i>
+<span class="font-semibold">RM 2.5M Seed Round</span>
+</div>
+<div class="w-px h-8 bg-white/30"></div>
+<div class="flex items-center gap-3">
+<i class="fas fa-envelope text-amber-300"></i>
+<span>contact@leish.my</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Slide 2: The Problem -->
+<div class="ppt-slide !bg-white" type="content">
+<div class="mb-6">
+<p class="text-sm font-semibold text-indigo-600 uppercase tracking-wider mb-2">The Problem</p>
+<h2 class="text-4xl font-bold text-slate-800">Creators Are Booming, But Infrastructure Is Broken</h2>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="space-y-4">
+<div class="bg-gradient-to-r from-rose-50 to-rose-100 rounded-xl p-5 border-l-4 border-rose-500">
+<div class="flex items-center gap-3 mb-3">
+<i class="fas fa-video text-rose-500 text-2xl"></i>
+<h3 class="text-xl font-bold text-slate-800">15M+ TikTok Creators</h3>
+</div>
+<p class="text-slate-600">in Malaysia lack professional spaces to produce quality content</p>
+</div>
+<div class="bg-gradient-to-r from-amber-50 to-amber-100 rounded-xl p-5 border-l-4 border-amber-500">
+<div class="flex items-center gap-3 mb-3">
+<i class="fas fa-dollar-sign text-amber-500 text-2xl"></i>
+<h3 class="text-xl font-bold text-slate-800">RM 150-300/hour</h3>
+</div>
+<p class="text-slate-600">Studio rentals are prohibitively expensive for emerging creators</p>
+</div>
+<div class="bg-gradient-to-r from-violet-50 to-violet-100 rounded-xl p-5 border-l-4 border-violet-500">
+<div class="flex items-center gap-3 mb-3">
+<i class="fas fa-camera text-violet-500 text-2xl"></i>
+<h3 class="text-xl font-bold text-slate-800">RM 50K+ CapEx</h3>
+</div>
+<p class="text-slate-600">Equipment ownership barrier prevents creator growth</p>
+</div>
+</div>
+<div class="space-y-4">
+<div class="bg-slate-50 rounded-xl p-6">
+<h3 class="text-xl font-bold text-slate-800 mb-4">Current Pain Points</h3>
+<div class="space-y-3">
+<div class="flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-rose-500 flex items-center justify-center flex-shrink-0 mt-0.5">
+<i class="fas fa-times text-white text-xs"></i>
+</div>
+<p class="text-slate-700">No standardized training paths for creators</p>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-rose-500 flex items-center justify-center flex-shrink-0 mt-0.5">
+<i class="fas fa-times text-white text-xs"></i>
+</div>
+<p class="text-slate-700">SMEs pay RM 15K-50K for agency work they can't afford</p>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-rose-500 flex items-center justify-center flex-shrink-0 mt-0.5">
+<i class="fas fa-times text-white text-xs"></i>
+</div>
+<p class="text-slate-700">Fragmented physical infrastructure across the market</p>
+</div>
+</div>
+</div>
+<div class="bg-indigo-50 rounded-xl p-6 border-2 border-indigo-200">
+<div class="flex items-center gap-3 mb-3">
+<i class="fas fa-lightbulb text-indigo-600 text-2xl"></i>
+<h3 class="text-xl font-bold text-indigo-800">Market Gap</h3>
+</div>
+<p class="text-indigo-700 leading-relaxed">While Canva/CapCut democratized tools, <span class="font-bold">physical infrastructure</span> remains fragmented and inaccessible.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Slide 3: The Solution -->
+<div class="ppt-slide !bg-white" type="content">
+<div class="mb-4">
+<p class="text-sm font-semibold text-indigo-600 uppercase tracking-wider mb-2">The Solution</p>
+<h2 class="text-4xl font-bold text-slate-800 mb-2">The Leish Ecosystem: Four Pillars, One Platform</h2>
+</div>
+<div class="flex gap-6">
+<div class="flex-[55]">
+<img alt="LEISH Ecosystem" class="w-full h-full object-contain rounded-xl" src="leish_ecosystem.png"/>
+</div>
+<div class="flex-[45] space-y-2">
+<div class="bg-gradient-to-r from-indigo-500 to-indigo-600 rounded-xl p-4 text-white">
+<div class="flex items-center justify-between mb-2">
+<h3 class="text-lg font-bold">Phase 1: Leish Studio</h3>
+<span class="bg-white/20 px-3 py-1 rounded-full text-sm">Now</span>
+</div>
+<p class="text-sm opacity-90 mb-2">Premium creative spaces with tech-enabled booking</p>
+<div class="flex items-center gap-2 text-sm font-semibold">
+<i class="fas fa-tag"></i>
+<span>RM 50-80/hour</span>
+</div>
+</div>
+<div class="bg-gradient-to-r from-violet-500 to-violet-600 rounded-xl p-4 text-white">
+<div class="flex items-center justify-between mb-2">
+<h3 class="text-lg font-bold">Phase 2: Leish Lab</h3>
+<span class="bg-white/20 px-3 py-1 rounded-full text-sm">Month 6</span>
+</div>
+<p class="text-sm opacity-90 mb-2">Equipment rental subscription with IoT inventory</p>
+<div class="flex items-center gap-2 text-sm font-semibold">
+<i class="fas fa-tag"></i>
+<span>RM 499/week</span>
+</div>
+</div>
+<div class="bg-gradient-to-r from-pink-500 to-pink-600 rounded-xl p-4 text-white">
+<div class="flex items-center justify-between mb-2">
+<h3 class="text-lg font-bold">Phase 3: Leish Academy</h3>
+<span class="bg-white/20 px-3 py-1 rounded-full text-sm">Month 12</span>
+</div>
+<p class="text-sm opacity-90 mb-2">Certification programs &amp; corporate training</p>
+<div class="flex items-center gap-2 text-sm font-semibold">
+<i class="fas fa-tag"></i>
+<span>RM 4,500/intensive</span>
+</div>
+</div>
+<div class="bg-gradient-to-r from-emerald-500 to-emerald-600 rounded-xl p-4 text-white">
+<div class="flex items-center justify-between mb-2">
+<h3 class="text-lg font-bold">Phase 4: Leish Pro</h3>
+<span class="bg-white/20 px-3 py-1 rounded-full text-sm">Month 18</span>
+</div>
+<p class="text-sm opacity-90 mb-2">B2B creative agency with talent pipeline</p>
+<div class="flex items-center gap-2 text-sm font-semibold">
+<i class="fas fa-tag"></i>
+<span>RM 2,999-7,999/mo</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Slide 4: Market Opportunity -->
+<div class="ppt-slide !bg-white" type="content">
+<div class="mb-2">
+<p class="text-sm font-semibold text-indigo-600 uppercase tracking-wider mb-2">Market Opportunity</p>
+<h2 class="text-4xl font-bold text-slate-800">Massive &amp; Growing Market</h2>
+</div>
+<div class="flex gap-6">
+<div class="flex-[60]">
+<img alt="Market Opportunity" class="w-full h-full object-contain rounded-xl" src="slide4_market_opportunity.png"/>
+</div>
+<div class="flex-[40] space-y-2">
+<div class="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl p-4 border-2 border-indigo-200">
+<div class="text-4xl font-black text-indigo-600 mb-2">RM 2.8B</div>
+<h3 class="text-lg font-bold text-slate-800 mb-1">TAM</h3>
+<p class="text-sm text-slate-600">SEA Creator Economy - $2.8B annual content marketing spend</p>
+</div>
+<div class="bg-gradient-to-br from-violet-50 to-violet-100 rounded-xl p-4 border-2 border-violet-200">
+<div class="text-4xl font-black text-violet-600 mb-2">RM 450M</div>
+<h3 class="text-lg font-bold text-slate-800 mb-1">SAM</h3>
+<p class="text-sm text-slate-600">Malaysia + Singapore addressable within 3 years</p>
+</div>
+<div class="bg-gradient-to-br from-pink-50 to-pink-100 rounded-xl p-4 border-2 border-pink-200">
+<div class="text-4xl font-black text-pink-600 mb-2">RM 8.4M</div>
+<h3 class="text-lg font-bold text-slate-800 mb-1">SOM</h3>
+<p class="text-sm text-slate-600">Klang Valley Year 3 - Our target revenue</p>
+</div>
+<div class="bg-emerald-50 rounded-xl p-4 border border-emerald-200">
+<h3 class="text-base font-bold text-emerald-800 mb-2">Growth Drivers</h3>
+<div class="space-y-1 text-sm">
+<div class="flex items-center gap-2">
+<i class="fas fa-arrow-up text-emerald-600"></i>
+<span class="text-slate-700">40% YoY creator growth</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="fas fa-arrow-up text-emerald-600"></i>
+<span class="text-slate-700">300% ghost kitchen increase</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="fas fa-arrow-up text-emerald-600"></i>
+<span class="text-slate-700">78% SMEs need video content</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Slide 5: Business Model -->
+<div class="ppt-slide !bg-white" type="content">
+<div class="mb-2">
+<p class="text-sm font-semibold text-indigo-600 uppercase tracking-wider mb-2">Business Model</p>
+<h2 class="text-4xl font-bold text-slate-800">Asset-Light Tech + Asset-Heavy Infrastructure</h2>
+</div>
+<div class="flex gap-6">
+<div class="flex-[65]">
+<img alt="Unit Economics" class="w-full h-full object-contain rounded-xl" src="unit_economics.png"/>
+</div>
+<div class="flex-[35] space-y-2">
+<div class="bg-slate-50 rounded-xl p-4">
+<h3 class="text-lg font-bold text-slate-800 mb-3">Revenue Streams</h3>
+<div class="space-y-2">
+<div class="flex items-center justify-between p-2 bg-white rounded-lg shadow-sm">
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-indigo-500"></div>
+<span class="text-sm font-medium">Leish Studio</span>
+</div>
+<span class="text-sm text-slate-600">15-20%</span>
+</div>
+<div class="flex items-center justify-between p-2 bg-white rounded-lg shadow-sm">
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-violet-500"></div>
+<span class="text-sm font-medium">Leish Lab</span>
+</div>
+<span class="text-sm text-slate-600">40%</span>
+</div>
+<div class="flex items-center justify-between p-2 bg-white rounded-lg shadow-sm">
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-pink-500"></div>
+<span class="text-sm font-medium">Leish Academy</span>
+</div>
+<span class="text-sm text-slate-600">70%</span>
+</div>
+<div class="flex items-center justify-between p-2 bg-white rounded-lg shadow-sm">
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-emerald-500"></div>
+<span class="text-sm font-medium">Leish Pro</span>
+</div>
+<span class="text-sm text-slate-600">35%</span>
+</div>
+</div>
+</div>
+<div class="bg-indigo-50 rounded-xl p-4 border-2 border-indigo-200">
+<h3 class="text-lg font-bold text-indigo-800 mb-3">Unit Economics</h3>
+<div class="space-y-2 text-sm">
+<div class="flex justify-between">
+<span class="text-slate-600">Setup Cost</span>
+<span class="font-semibold text-slate-800">RM 180K</span>
+</div>
+<div class="flex justify-between">
+<span class="text-slate-600">Monthly Revenue</span>
+<span class="font-semibold text-emerald-600">RM 17,000</span>
+</div>
+<div class="flex justify-between">
+<span class="text-slate-600">Monthly Cost</span>
+<span class="font-semibold text-amber-600">RM 8,700</span>
+</div>
+<div class="border-t border-indigo-200 pt-2 flex justify-between">
+<span class="text-slate-800 font-semibold">Net Margin</span>
+<span class="font-bold text-pink-600 text-lg">49%</span>
+</div>
+<div class="flex justify-between">
+<span class="text-slate-600">Break-even</span>
+<span class="font-semibold text-teal-600">Month 8</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Slide 6: Traction & Validation -->
+<div class="ppt-slide !bg-white" type="content">
+<div class="mb-6">
+<p class="text-sm font-semibold text-indigo-600 uppercase tracking-wider mb-2">Traction &amp; Validation</p>
+<h2 class="text-4xl font-bold text-slate-800">Already Building (Not Just Powerpoint)</h2>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div class="space-y-4">
+<div class="bg-gradient-to-r from-emerald-50 to-emerald-100 rounded-xl p-5 border-l-4 border-emerald-500">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-10 h-10 rounded-full bg-emerald-500 flex items-center justify-center">
+<i class="fas fa-check text-white"></i>
+</div>
+<h3 class="text-xl font-bold text-slate-800">Tech Stack Deployed</h3>
+</div>
+<p class="text-slate-600 mb-2">Supabase backend + Cloudflare frontend live and operational</p>
+<div class="flex flex-wrap gap-2">
+<span class="bg-emerald-200 text-emerald-800 px-3 py-1 rounded-full text-sm font-medium">Supabase</span>
+<span class="bg-emerald-200 text-emerald-800 px-3 py-1 rounded-full text-sm font-medium">Cloudflare</span>
+<span class="bg-emerald-200 text-emerald-800 px-3 py-1 rounded-full text-sm font-medium">Resend</span>
+</div>
+</div>
+<div class="bg-gradient-to-r from-indigo-50 to-indigo-100 rounded-xl p-5 border-l-4 border-indigo-500">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-10 h-10 rounded-full bg-indigo-500 flex items-center justify-center">
+<i class="fas fa-check text-white"></i>
+</div>
+<h3 class="text-xl font-bold text-slate-800">Platform Features Live</h3>
+</div>
+<div class="space-y-2">
+<div class="flex items-center gap-2">
+<i class="fas fa-calendar-check text-indigo-600"></i>
+<span class="text-slate-700">Real-time booking system</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="fas fa-envelope text-indigo-600"></i>
+<span class="text-slate-700">Automated email workflows</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="fas fa-credit-card text-indigo-600"></i>
+<span class="text-slate-700">Payment integration ready</span>
+</div>
+</div>
+</div>
+<div class="bg-gradient-to-r from-violet-50 to-violet-100 rounded-xl p-5 border-l-4 border-violet-500">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-10 h-10 rounded-full bg-violet-500 flex items-center justify-center">
+<i class="fas fa-check text-white"></i>
+</div>
+<h3 class="text-xl font-bold text-slate-800">Location Scouted</h3>
+</div>
+<p class="text-slate-600">4,000 sqft commercial space identified in prime area</p>
+</div>
+</div>
+<div class="space-y-4">
+<div class="bg-gradient-to-r from-amber-50 to-amber-100 rounded-xl p-5 border-l-4 border-amber-500">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-10 h-10 rounded-full bg-amber-500 flex items-center justify-center">
+<i class="fas fa-handshake text-white"></i>
+</div>
+<h3 class="text-xl font-bold text-slate-800">Partnership Talks</h3>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="bg-amber-200 text-amber-800 px-3 py-1 rounded-full text-sm font-medium">Canon</span>
+<span class="bg-amber-200 text-amber-800 px-3 py-1 rounded-full text-sm font-medium">Rode</span>
+<span class="bg-amber-200 text-amber-800 px-3 py-1 rounded-full text-sm font-medium">Equipment Partners</span>
+</div>
+</div>
+<div class="bg-gradient-to-r from-pink-50 to-pink-100 rounded-xl p-5 border-l-4 border-pink-500">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-10 h-10 rounded-full bg-pink-500 flex items-center justify-center">
+<i class="fas fa-users text-white"></i>
+</div>
+<h3 class="text-xl font-bold text-slate-800">Advisory Board</h3>
+</div>
+<p class="text-slate-600">Industry veterans from production, VC, and tech</p>
+</div>
+<div class="bg-slate-800 rounded-xl p-5 text-white">
+<h3 class="text-xl font-bold mb-4">Next Milestones</h3>
+<div class="space-y-3">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-indigo-500 flex items-center justify-center text-sm font-bold">3</div>
+<div>
+<p class="font-semibold">Month 3</p>
+<p class="text-sm text-slate-300">First 100 bookings</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-violet-500 flex items-center justify-center text-sm font-bold">6</div>
+<div>
+<p class="font-semibold">Month 6</p>
+<p class="text-sm text-slate-300">65% utilization rate</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-emerald-500 flex items-center justify-center text-sm font-bold">12</div>
+<div>
+<p class="font-semibold">Month 12</p>
+<p class="text-sm text-slate-300">Break-even + Lab launch</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Slide 7: Go-To-Market Strategy -->
+<div class="ppt-slide !bg-white" type="content">
+<div class="mb-6">
+<p class="text-sm font-semibold text-indigo-600 uppercase tracking-wider mb-2">Go-To-Market Strategy</p>
+<h2 class="text-4xl font-bold text-slate-800">Land and Expand</h2>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="space-y-4">
+<div class="bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl p-6 text-white">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-2xl font-bold">Phase 1: KL Flagship</h3>
+<span class="bg-white/20 px-4 py-1 rounded-full text-sm">Months 0-12</span>
+</div>
+<div class="space-y-3">
+<div class="flex items-start gap-3">
+<i class="fas fa-user-friends text-indigo-200 mt-1"></i>
+<div>
+<p class="font-semibold">B2C: Influencer Seeding</p>
+<p class="text-sm opacity-90">50 free hours to top 20 creators</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<i class="fas fa-building text-indigo-200 mt-1"></i>
+<div>
+<p class="font-semibold">B2B: Corporate Content Days</p>
+<p class="text-sm opacity-90">Target HR/Real Estate/F&amp;B</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<i class="fas fa-search text-indigo-200 mt-1"></i>
+<div>
+<p class="font-semibold">SEO Strategy</p>
+<p class="text-sm opacity-90">"Studio rental KL", "Podcast studio Malaysia"</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<i class="fas fa-gift text-indigo-200 mt-1"></i>
+<div>
+<p class="font-semibold">Referral Program</p>
+<p class="text-sm opacity-90">Give RM 50, Get RM 50</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-gradient-to-br from-violet-500 to-violet-600 rounded-xl p-6 text-white">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-2xl font-bold">Phase 2: Expansion</h3>
+<span class="bg-white/20 px-4 py-1 rounded-full text-sm">Months 12-36</span>
+</div>
+<div class="space-y-3">
+<div class="flex items-start gap-3">
+<i class="fas fa-map-marked-alt text-violet-200 mt-1"></i>
+<div>
+<p class="font-semibold">Franchise Model</p>
+<p class="text-sm opacity-90">PJ/Penang expansion</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<i class="fas fa-globe text-violet-200 mt-1"></i>
+<div>
+<p class="font-semibold">Singapore Entry</p>
+<p class="text-sm opacity-90">Premium market penetration</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<i class="fas fa-handshake text-violet-200 mt-1"></i>
+<div>
+<p class="font-semibold">Joint Ventures</p>
+<p class="text-sm opacity-90">Jakarta/Bangkok partnerships</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="space-y-4">
+<div class="bg-emerald-50 rounded-xl p-6 border-2 border-emerald-200">
+<h3 class="text-xl font-bold text-emerald-800 mb-4">Unit Economics</h3>
+<div class="grid grid-cols-1 gap-4">
+<div class="bg-white rounded-lg p-4 shadow-sm">
+<p class="text-sm text-slate-600 mb-1">Customer Acquisition Cost</p>
+<p class="text-3xl font-black text-slate-800">RM 85</p>
+</div>
+<div class="bg-white rounded-lg p-4 shadow-sm">
+<p class="text-sm text-slate-600 mb-1">Lifetime Value</p>
+<p class="text-3xl font-black text-emerald-600">RM 2,400</p>
+</div>
+<div class="bg-emerald-500 rounded-lg p-4 text-white">
+<p class="text-sm opacity-90 mb-1">LTV:CAC Ratio</p>
+<p class="text-4xl font-black">28:1</p>
+</div>
+</div>
+</div>
+<div class="bg-slate-50 rounded-xl p-5">
+<h3 class="text-lg font-bold text-slate-800 mb-3">Key Metrics</h3>
+<div class="space-y-2">
+<div class="flex justify-between items-center">
+<span class="text-slate-600">Target CAC</span>
+<span class="font-semibold text-slate-800">&lt; RM 100</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-slate-600">Target LTV</span>
+<span class="font-semibold text-slate-800">&gt; RM 2,000</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-slate-600">Payback Period</span>
+<span class="font-semibold text-slate-800">&lt; 6 months</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Slide 8: Competitive Advantage -->
+<div class="ppt-slide !bg-white" type="content">
+<div class="mb-4">
+<p class="text-sm font-semibold text-indigo-600 uppercase tracking-wider mb-2">Competitive Advantage</p>
+<h2 class="text-4xl font-bold text-slate-800">Why We Win</h2>
+</div>
+<div class="flex gap-6">
+<div class="flex-[70]">
+<img alt="Competitive Matrix" class="w-full h-full object-contain rounded-xl" src="competitive_matrix.png"/>
+</div>
+<div class="flex-[30] space-y-2">
+<div class="bg-indigo-50 rounded-xl p-4 border-2 border-indigo-200">
+<h3 class="text-lg font-bold text-indigo-800 mb-3">Our Advantages</h3>
+<div class="space-y-2">
+<div class="flex items-start gap-2">
+<i class="fas fa-mobile-alt text-indigo-600 mt-1"></i>
+<div>
+<p class="font-semibold text-sm">Native Tech Platform</p>
+<p class="text-xs text-slate-600">App-based booking vs manual</p>
+</div>
+</div>
+<div class="flex items-start gap-2">
+<i class="fas fa-network-wired text-indigo-600 mt-1"></i>
+<div>
+<p class="font-semibold text-sm">Integrated Ecosystem</p>
+<p class="text-xs text-slate-600">4 verticals vs single point</p>
+</div>
+</div>
+<div class="flex items-start gap-2">
+<i class="fas fa-chart-line text-indigo-600 mt-1"></i>
+<div>
+<p class="font-semibold text-sm">Dynamic Pricing</p>
+<p class="text-xs text-slate-600">Surge/off-peak optimization</p>
+</div>
+</div>
+<div class="flex items-start gap-2">
+<i class="fas fa-database text-indigo-600 mt-1"></i>
+<div>
+<p class="font-semibold text-sm">Data Moat</p>
+<p class="text-xs text-slate-600">Usage analytics &amp; insights</p>
+</div>
+</div>
+<div class="flex items-start gap-2">
+<i class="fas fa-users text-indigo-600 mt-1"></i>
+<div>
+<p class="font-semibold text-sm">Community</p>
+<p class="text-xs text-slate-600">Academy + Events</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-gradient-to-r from-pink-500 to-pink-600 rounded-xl p-4 text-white">
+<h3 class="text-lg font-bold mb-2">Secret Sauce</h3>
+<p class="text-sm leading-relaxed">Every booking teaches us what equipment creators need, when they work, and what trends are emerging.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Slide 9: Financial Projections -->
+<div class="ppt-slide !bg-white" type="content">
+<div class="mb-2">
+<p class="text-sm font-semibold text-indigo-600 uppercase tracking-wider mb-2">Financial Projections</p>
+<h2 class="text-4xl font-bold text-slate-800">3-Year Revenue Trajectory</h2>
+</div>
+<div class="flex gap-6">
+<div class="flex-[65]">
+<img alt="Revenue Model" class="w-full h-full object-contain rounded-xl" src="slide9_revenue_model.png"/>
+</div>
+<div class="flex-[35] space-y-2">
+<div class="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl p-4 border-2 border-indigo-200">
+<div class="text-3xl font-black text-indigo-600 mb-1">216%</div>
+<h3 class="text-base font-bold text-slate-800 mb-1">CAGR</h3>
+<p class="text-sm text-slate-600">Compound Annual Growth Rate</p>
+</div>
+<div class="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-xl p-4 border-2 border-emerald-200">
+<div class="text-3xl font-black text-emerald-600 mb-1">68%</div>
+<h3 class="text-base font-bold text-slate-800 mb-1">Gross Margin</h3>
+<p class="text-sm text-slate-600">Blended across all revenue streams</p>
+</div>
+<div class="bg-gradient-to-br from-violet-50 to-violet-100 rounded-xl p-4 border-2 border-violet-200">
+<div class="text-3xl font-black text-violet-600 mb-1">Month 14</div>
+<h3 class="text-base font-bold text-slate-800 mb-1">EBITDA Positive</h3>
+<p class="text-sm text-slate-600">Path to profitability</p>
+</div>
+<div class="bg-slate-800 rounded-xl p-4 text-white">
+<h3 class="text-base font-bold mb-2">Revenue Mix Year 3</h3>
+<div class="space-y-1 text-sm">
+<div class="flex justify-between">
+<span>Leish Studio</span>
+<span class="font-semibold">50%</span>
+</div>
+<div class="flex justify-between">
+<span>Leish Academy</span>
+<span class="font-semibold">21.4%</span>
+</div>
+<div class="flex justify-between">
+<span>Leish Lab</span>
+<span class="font-semibold">17.9%</span>
+</div>
+<div class="flex justify-between">
+<span>Leish Pro</span>
+<span class="font-semibold">10.7%</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Slide 10: The Ask -->
+<div class="ppt-slide !bg-white" type="content">
+<div class="mb-4">
+<p class="text-sm font-semibold text-indigo-600 uppercase tracking-wider mb-2">The Ask</p>
+<h2 class="text-4xl font-bold text-slate-800">RM 2.5 Million Seed Round</h2>
+</div>
+<div class="flex gap-6">
+<div class="flex-[60]">
+<img alt="Use of Funds" class="w-full h-full object-contain rounded-xl" src="slide10_use_of_funds.png"/>
+</div>
+<div class="flex-[40] space-y-2">
+<div class="bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl p-4 text-white">
+<h3 class="text-lg font-bold mb-3">Investment Terms</h3>
+<div class="space-y-2">
+<div class="flex justify-between items-center py-2 border-b border-white/20">
+<span class="text-sm">Equity Offered</span>
+<span class="text-xl font-bold">31.25%</span>
+</div>
+<div class="flex justify-between items-center py-2 border-b border-white/20">
+<span class="text-sm">Pre-Money Valuation</span>
+<span class="text-xl font-bold">RM 8M</span>
+</div>
+<div class="flex justify-between items-center py-2 border-b border-white/20">
+<span class="text-sm">Board Seat</span>
+<span class="text-lg font-bold">Yes</span>
+</div>
+<div class="flex justify-between items-center py-2">
+<span class="text-sm">Pro-rata Rights</span>
+<span class="text-lg font-bold">Series A</span>
+</div>
+</div>
+</div>
+<div class="bg-emerald-50 rounded-xl p-4 border-2 border-emerald-200">
+<h3 class="text-base font-bold text-emerald-800 mb-2">Use of Funds</h3>
+<div class="space-y-1 text-sm">
+<div class="flex justify-between">
+<span class="text-slate-600">Studio Build-Out</span>
+<span class="font-semibold text-slate-800">36%</span>
+</div>
+<div class="flex justify-between">
+<span class="text-slate-600">Equipment</span>
+<span class="font-semibold text-slate-800">18%</span>
+</div>
+<div class="flex justify-between">
+<span class="text-slate-600">Technology</span>
+<span class="font-semibold text-slate-800">16%</span>
+</div>
+<div class="flex justify-between">
+<span class="text-slate-600">Operations</span>
+<span class="font-semibold text-slate-800">14%</span>
+</div>
+<div class="flex justify-between">
+<span class="text-slate-600">Marketing</span>
+<span class="font-semibold text-slate-800">12%</span>
+</div>
+<div class="flex justify-between">
+<span class="text-slate-600">Working Capital</span>
+<span class="font-semibold text-slate-800">4%</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Slide 11: The Team -->
+<div class="ppt-slide !bg-white" type="content">
+<div class="mb-6">
+<p class="text-sm font-semibold text-indigo-600 uppercase tracking-wider mb-2">The Team</p>
+<h2 class="text-4xl font-bold text-slate-800">Builders, Not Just Dreamers</h2>
+</div>
+<div class="grid grid-cols-3 gap-6">
+<div class="col-span-2 space-y-4">
+<div class="bg-gradient-to-r from-indigo-500 to-indigo-600 rounded-xl p-6 text-white">
+<div class="flex items-start gap-4">
+<div class="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
+<i class="fas fa-user-tie text-3xl"></i>
+</div>
+<div class="flex-1">
+<h3 class="text-2xl font-bold mb-1">Founder/CEO</h3>
+<p class="text-sm opacity-90 mb-3">Full-stack developer who deployed the booking platform</p>
+<div class="flex flex-wrap gap-2">
+<span class="bg-white/20 px-3 py-1 rounded-full text-sm">Tech Architecture</span>
+<span class="bg-white/20 px-3 py-1 rounded-full text-sm">Vision</span>
+<span class="bg-white/20 px-3 py-1 rounded-full text-sm">Investor Relations</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-slate-50 rounded-xl p-5">
+<h3 class="text-xl font-bold text-slate-800 mb-4">Key Hires (Funded)</h3>
+<div class="space-y-3">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-full bg-violet-500 flex items-center justify-center flex-shrink-0">
+<i class="fas fa-briefcase text-white"></i>
+</div>
+<div>
+<p class="font-semibold text-slate-800">General Manager</p>
+<p class="text-sm text-slate-600">10+ years hospitality/creative space management</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-full bg-pink-500 flex items-center justify-center flex-shrink-0">
+<i class="fas fa-graduation-cap text-white"></i>
+</div>
+<div>
+<p class="font-semibold text-slate-800">Head of Academy</p>
+<p class="text-sm text-slate-600">Ex-university curriculum designer</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-full bg-emerald-500 flex items-center justify-center flex-shrink-0">
+<i class="fas fa-handshake text-white"></i>
+</div>
+<div>
+<p class="font-semibold text-slate-800">B2B Sales Lead</p>
+<p class="text-sm text-slate-600">Enterprise SaaS sales background</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="space-y-4">
+<div class="bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl p-5 border-2 border-amber-200">
+<h3 class="text-xl font-bold text-amber-800 mb-4">Advisory Board</h3>
+<div class="space-y-3">
+<div class="bg-white rounded-lg p-3 shadow-sm">
+<p class="font-semibold text-slate-800 text-sm">Production House CEO</p>
+<p class="text-xs text-slate-600">Industry expertise</p>
+</div>
+<div class="bg-white rounded-lg p-3 shadow-sm">
+<p class="font-semibold text-slate-800 text-sm">VC Partner</p>
+<p class="text-xs text-slate-600">Series A preparation</p>
+</div>
+<div class="bg-white rounded-lg p-3 shadow-sm">
+<p class="font-semibold text-slate-800 text-sm">Tech CTO</p>
+<p class="text-xs text-slate-600">Scalability architecture</p>
+</div>
+</div>
+</div>
+<div class="bg-indigo-50 rounded-xl p-4 border border-indigo-200">
+<h3 class="text-base font-bold text-indigo-800 mb-2">Team Size</h3>
+<div class="flex items-center justify-between">
+<span class="text-slate-600">Year 1</span>
+<span class="text-2xl font-bold text-indigo-600">6 FTEs</span>
+</div>
+<div class="flex items-center justify-between mt-1">
+<span class="text-slate-600">Year 3</span>
+<span class="text-2xl font-bold text-indigo-600">18 FTEs</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Slide 12: Closing -->
+<div class="ppt-slide !bg-gradient-to-br !from-slate-800 !to-slate-900" type="final">
+<div class="flex flex-col items-center justify-center h-full text-white">
+<div class="text-center mb-8">
+<h2 class="text-5xl font-black mb-4">The Creator Economy Needs Infrastructure.</h2>
+<h2 class="text-5xl font-black text-indigo-400">We're Building It.</h2>
+</div>
+<div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-8 max-w-4xl">
+<h3 class="text-2xl font-bold mb-6 text-center">Why Now?</h3>
+<div class="grid grid-cols-2 gap-6">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-indigo-500 flex items-center justify-center flex-shrink-0 font-bold">1</div>
+<p class="text-sm leading-relaxed">Post-pandemic commercial real estate is cheap (high vacancy)</p>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-violet-500 flex items-center justify-center flex-shrink-0 font-bold">2</div>
+<p class="text-sm leading-relaxed">Creator economy maturing beyond "influencer" into "serious business"</p>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-pink-500 flex items-center justify-center flex-shrink-0 font-bold">3</div>
+<p class="text-sm leading-relaxed">AI tools making creation accessible, but <span class="font-bold">quality physical space</span> is the differentiator</p>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-emerald-500 flex items-center justify-center flex-shrink-0 font-bold">4</div>
+<p class="text-sm leading-relaxed">SE Asia's first-mover advantage (no integrated competitor exists)</p>
+</div>
+</div>
+</div>
+<div class="bg-indigo-500 rounded-2xl px-8 py-4 mb-8">
+<p class="text-xl font-medium italic">"Every Malaysian creator can compete globally with professional infrastructure."</p>
+</div>
+<div class="flex items-center gap-8 text-lg">
+<div class="flex items-center gap-3">
+<i class="fas fa-globe text-indigo-400"></i>
+<span>Demo: leish.my</span>
+</div>
+<div class="w-px h-8 bg-white/30"></div>
+<div class="flex items-center gap-3">
+<i class="fab fa-github text-indigo-400"></i>
+<span>github.com/leish</span>
+</div>
+<div class="w-px h-8 bg-white/30"></div>
+<div class="flex items-center gap-3">
+<i class="fas fa-envelope text-indigo-400"></i>
+<span>contact@leish.my</span>
+</div>
+</div>
+<div class="mt-8 text-2xl font-bold text-indigo-400">
+                Let's Build the Future of Creation
+            </div>
+</div>
+</div>
+</body>
+</html>
